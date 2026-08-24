@@ -1,0 +1,1 @@
+| `{{FrontendRoot}}/` | Angular SPA (pnpm) |

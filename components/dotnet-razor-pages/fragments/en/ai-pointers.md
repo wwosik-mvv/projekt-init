@@ -1,0 +1,1 @@
+- [ai/ui.md](ai/ui.md) — UI conventions: layout, components, wording.

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="{{RootNamespace}}.Server/{{RootNamespace}}.Server.csproj" />
+  <Project Path="{{RootNamespace}}.Server.Tests/{{RootNamespace}}.Server.Tests.csproj" />
+</Solution>

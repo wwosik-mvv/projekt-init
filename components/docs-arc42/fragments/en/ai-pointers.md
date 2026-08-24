@@ -1,0 +1,1 @@
+- [ai/documentation.md](ai/documentation.md) — how to write the documentation under `docs/`.

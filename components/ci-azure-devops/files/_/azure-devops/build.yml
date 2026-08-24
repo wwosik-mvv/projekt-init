@@ -1,0 +1,35 @@
+# Build and test. Deployment stages are added per environment once the target infrastructure
+# exists — do not guess them.
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  solution: "{{BackendRoot}}/{{RootNamespace}}.slnx"
+  buildConfiguration: Release
+
+steps:
+  - task: UseDotNet@2
+    displayName: Install .NET SDK
+    inputs:
+      packageType: sdk
+      version: 10.0.x
+
+  - script: dotnet restore $(solution)
+    displayName: Restore
+
+  - script: dotnet build $(solution) --configuration $(buildConfiguration) --no-restore
+    displayName: Build
+
+  - script: dotnet test $(solution) --configuration $(buildConfiguration) --no-build --logger trx
+    displayName: Test
+
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFormat: VSTest
+      testResultsFiles: "**/*.trx"

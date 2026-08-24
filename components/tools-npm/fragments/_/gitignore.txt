@@ -1,0 +1,3 @@
+
+# npm tooling
+/tools/npm/node_modules/

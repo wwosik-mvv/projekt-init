@@ -1,0 +1,7 @@
+{
+  "name": "{{ProjectSlug}}-tools",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "description": "Ready-made npm packages used as tools in this repo.",
+  "devDependencies": {}
+}
