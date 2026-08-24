@@ -1,0 +1,1 @@
+- [ai/dokumentacja.md](ai/dokumentacja.md) — jak pisać dokumentację w `docs/`.

@@ -10,7 +10,7 @@ Terraform for the project's cloud infrastructure.
 
 | Path | Language |
 | ---- | -------- |
-| `infrastructure/README.md` | localized |
+| `infrastructure/README.md` | neutral |
 | `.gitignore` additions | neutral |
 
 No `.tf` files are templated: infrastructure is specific enough that a generic skeleton would

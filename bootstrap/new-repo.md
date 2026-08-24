@@ -41,6 +41,9 @@ For each resolved component, in the order the components are listed in
   path names** as well as in file contents.
 - If two components would write the same path, that is a catalog bug — report it, do not
   silently pick one.
+- **Skip `bin/` and `obj/`.** The `.csproj` files under `components/` are templates, but an
+  IDE's C# language server will restore and build them in place. Anything it leaves behind is
+  not part of the template.
 
 ## Step 4 — Assemble the slotted documents
 

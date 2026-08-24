@@ -10,8 +10,8 @@ variants to every component.
 | File | Language | Status |
 | ---- | -------- | ------ |
 | [en.md](en.md) | English | complete |
-| [de.md](de.md) | German | — |
-| [pl.md](pl.md) | Polish | — |
+| [de.md](de.md) | German | complete |
+| [pl.md](pl.md) | Polish | complete |
 
 ## What never varies by language
 

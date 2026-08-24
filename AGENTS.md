@@ -29,4 +29,7 @@ Those describe the catalog. The target repo's versions come from
 - This repo's own prose (this file, `README.md`, `bootstrap/`, `languages/`, every
   `component.md`) is **English**, whatever language the templates it holds are written in.
 - Language-neutral template files live in `files/_/`; localized ones in `files/<lang>/`.
+- The `.csproj` files under `components/` are templates, not projects. An IDE's C# language
+  server may restore and build them in place; `bin/` and `obj/` are git-ignored and are never
+  part of a template.
 - Never commit or stage changes — the human handles all git operations.

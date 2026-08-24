@@ -18,7 +18,7 @@ infrastructure rather than to a home server.
 | Path | Language |
 | ---- | -------- |
 | `azure-devops/build.yml` | neutral |
-| `azure-devops/README.md` | localized |
+| `azure-devops/README.md` | neutral |
 
 Pipeline YAML is configuration, so it is English like every other config file.
 

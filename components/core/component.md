@@ -19,6 +19,11 @@ non-negotiable rules that hold in every project regardless of stack.
 | `docs/README.md` | localized |
 | `.gitignore` | neutral |
 
+Paths in this table use their **English** names. `AGENTS.md`, `CLAUDE.md` and `README.md` keep
+those names in every language; the files inside `ai/` and `docs/` are renamed per language —
+`ai/standards.md` is `ai/Standards.md` in German and `ai/standardy.md` in Polish. The names come
+from `languages/<lang>.md`, which is the authority.
+
 ## Slotted documents it owns
 
 `core` owns the repo-level slotted documents. Other components fill these slots; a slot no

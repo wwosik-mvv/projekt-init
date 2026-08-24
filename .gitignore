@@ -1,0 +1,11 @@
+# Build output that tooling leaks into the templates. The .csproj files under components/ are
+# templates, not projects — but an IDE's C# language server will happily restore and build them
+# anyway. Nothing generated this way is ever part of a template.
+bin/
+obj/
+
+# Editor / IDE
+.vs/
+.idea/
+*.user
+settings.local.json

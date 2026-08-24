@@ -1,0 +1,1 @@
+- [ai/UI.md](ai/UI.md) — UI-Konventionen: Aufbau, Komponenten, Formulierungen.

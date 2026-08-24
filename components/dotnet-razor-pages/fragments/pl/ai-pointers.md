@@ -1,0 +1,1 @@
+- [ai/ui.md](ai/ui.md) — konwencje UI: układ, komponenty, formułowanie tekstów.

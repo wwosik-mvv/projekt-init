@@ -23,8 +23,11 @@ data repo — can leave it out.
 | `spec/_template.md` | localized |
 | `spec/00-brainstorming/`, `10-analysis/`, `50-todo/`, `60-verify/`, `70-completed/` | localized folder names, `.gitkeep` in each |
 
-Folder names and file-naming patterns come from `languages/<lang>.md` — that file is the
-authority.
+Paths in this table use their **English** names; `ai/workflow.md`, `spec/_template.md` and the
+lifecycle folders are all renamed per language (`ai/Arbeitsablauf.md`, `spec/_vorlage.md`,
+`spec/50-entwurf/` in German). The numeric prefixes never change, so the lifecycle sorts in
+order whatever the language. Names and file-naming patterns come from `languages/<lang>.md` —
+that file is the authority.
 
 ## Slots it owns
 

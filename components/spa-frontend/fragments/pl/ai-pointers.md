@@ -1,0 +1,1 @@
+- [ai/frontend.md](ai/frontend.md) — konwencje frontendu.

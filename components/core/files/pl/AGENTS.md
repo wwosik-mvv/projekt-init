@@ -1,0 +1,40 @@
+# {{ProjectName}}
+
+{{ProjectDescription}}
+
+<!-- slot: stack -->
+
+Zacznij tutaj, potem idź za odnośnikami:
+
+- [ai/standardy.md](ai/standardy.md) — konwencje, których trzyma się to repo.
+- [ai/pamięć.md](ai/pamięć.md) — zgromadzone fakty o tym kodzie.
+<!-- slot: ai-pointers -->
+- [docs/](docs/) — dokumentacja tego, jak aplikacja działa naprawdę.
+
+<!-- slot: layout -->
+
+## Język
+
+Językiem tego repo jest **polski**. Dotyczy to całej prozy, planów, dokumentacji, tekstów
+interfejsu i wiadomości commitów.
+
+Szkielet techniczny jest angielski w każdym projekcie z tej rodziny i nie jest wyborem
+językowym: `src/`, `tools/`, `deploy/`, `logs/`, `data/`, `.tmp/`, `run.ps1`, `run.sh` oraz
+wszystkie pliki konfiguracyjne, razem z ich zawartością. Nazwy folderów `ai/`, `spec/`, `docs/`,
+`.github/` i pliki `AGENTS.md`, `CLAUDE.md`, `README.md` też są stałe — ale wszystko w środku
+jest w języku projektu.
+
+W kodzie identyfikatory, komentarze i komunikaty logów są angielskie; **słownictwo dziedzinowe
+idzie za językiem projektu**. Wszystko, co czyta użytkownik, jest po polsku.
+
+## Zasady bezwzględne
+
+- **Nigdy nie commituj ani nie stage'uj.** Wszystkie operacje gita robi człowiek. Gotową pracę
+  zostaw w working tree i napisz tylko, że zadanie jest skończone.
+- **Pliki tymczasowe i robocze trafiają do `.tmp/`** w katalogu głównym repo (ignorowanego przez
+  gita) — nigdy do systemowego katalogu tymczasowego ani do AppData.
+- **Cała pamięć projektu jest wspólna, w `ai/`** — nigdy w lokalnej pamięci żadnego narzędzia na
+  żadnym komputerze, żeby każdy agent czytał to samo.
+<!-- slot: hard-rules-extra -->
+
+<!-- slot: commands -->

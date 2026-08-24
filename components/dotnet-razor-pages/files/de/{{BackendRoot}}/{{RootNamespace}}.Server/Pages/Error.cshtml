@@ -1,0 +1,15 @@
+@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Da ist etwas schiefgegangen";
+}
+
+<h1>Da ist etwas schiefgegangen</h1>
+
+<p>Der Fehler wurde protokolliert. Versuche es noch einmal; tritt er weiter auf, hilft ein Blick
+in die Logs.</p>
+
+@if (Model.RequestId is not null)
+{
+    <p>Anfrage-ID: <code>@Model.RequestId</code></p>
+}
