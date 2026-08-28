@@ -33,16 +33,19 @@ comments.
 
 ## The one exception inside the code folders
 
-The code folders (`src/`, or `backend/` and `frontend/` in a monorepo) are English in their
-structure, identifiers, and comments — but **text shown to the user is in the project
-language**. A German app says `Reise anlegen` on the button, not `Create trip`.
-So:
+The code folders (`backend/`, or `src/server` and `src/frontend`) are English — but **text
+shown to the user is in the project language**. A German app says `Reise anlegen` on the button,
+not `Create trip`. So:
 
-- Code, folder names, class and member names, comments, log messages: English. Domain
-  vocabulary within those names follows the project language (`Vertrag`, not `Contract`, in a
-  German project) — the split is domain versus technical, not code versus prose.
-- User-facing strings — view templates, validation messages, e-mails, CLI output aimed at the
-  human: project language.
+- **English, without exception:** code, folder names, class and member names, comments, log
+  messages, and **database table and column names** — domain vocabulary included. A German
+  project names the class `Contract` and the table `contracts`, not `Vertrag` and `vertraege`.
+  The split is code versus what a user reads, not domain versus technical.
+- **Project language:** the strings a user reads — view templates, validation messages, e-mails,
+  CLI output aimed at the human.
+
+The point of the line falling here is that code stays legible and portable no matter which
+language a project was written for, while nothing a user sees is ever in the wrong language.
 
 In this catalog that means template files which carry user-facing text (Razor views, for
 instance) live in `files/<lang>/`, while all other code lives in `files/_/`.

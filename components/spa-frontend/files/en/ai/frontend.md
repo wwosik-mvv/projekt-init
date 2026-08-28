@@ -22,9 +22,9 @@ and use `pnpm`.
 
 ## Language
 
-Code, identifiers, folder names, and comments are **English**; domain vocabulary within them
-follows the project language. Every string the user reads is in the project language, kept out
-of component logic so it can be found and changed in one place.
+Code, identifiers, folder names, and comments are **English**, domain vocabulary included.
+Every string the user reads is in the project language, kept out of component logic so it can be
+found and changed in one place.
 
 ## Styling
 

@@ -25,9 +25,9 @@ Fehler — löschen und `pnpm` verwenden.
 
 ## Sprache
 
-Code, Bezeichner, Ordnernamen und Kommentare sind **englisch**; Fachvokabular darin folgt der
-Projektsprache. Jeder Text, den der Benutzer liest, ist in der Projektsprache und wird aus der
-Komponentenlogik herausgehalten, damit er an einer Stelle auffindbar und änderbar bleibt.
+Code, Bezeichner, Ordnernamen und Kommentare sind **englisch**, Fachvokabular eingeschlossen.
+Jeder Text, den der Benutzer liest, ist in der Projektsprache und wird aus der Komponentenlogik
+herausgehalten, damit er an einer Stelle auffindbar und änderbar bleibt.
 
 ## Styling
 

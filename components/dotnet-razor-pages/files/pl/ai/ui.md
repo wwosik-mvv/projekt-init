@@ -1,7 +1,9 @@
 # Konwencje UI
 
-Interfejs to renderowane po stronie serwera Razor Pages. Interaktywność wymagająca aktualizacji
-na żywo idzie przez SignalR; wszystko inne to zwykły post formularza albo nawigacja po stronach.
+Interfejs to renderowane po stronie serwera Razor Pages. Interaktywność to zwykły post
+formularza albo nawigacja po stronach. Aktualizacje na żywo nie są podpięte: jeśli jakaś funkcja
+naprawdę ich potrzebuje, dodaj SignalR w ramach tej funkcji i zapisz decyzję
+w [pamięć.md](pamięć.md).
 
 ## Struktura
 
@@ -24,8 +26,9 @@ na żywo idzie przez SignalR; wszystko inne to zwykły post formularza albo nawi
 ## Język
 
 Markup, tag helpery, deklaracje `@model`, nazwy klas i składowych oraz komentarze są **po
-angielsku**. Wszystko, co czyta użytkownik — nagłówki, etykiety, przyciski, komunikaty walidacji,
-stany puste, teksty błędów — jest po polsku. Zobacz [AGENTS.md](../AGENTS.md).
+angielsku**, łącznie ze słownictwem dziedzinowym. Wszystko, co czyta użytkownik — nagłówki,
+etykiety, przyciski, komunikaty walidacji, stany puste, teksty błędów — jest po polsku. Zobacz
+[AGENTS.md](../AGENTS.md).
 
 ## Formułowanie tekstów
 

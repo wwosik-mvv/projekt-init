@@ -1,1 +1,1 @@
-Razor Pages · SignalR
+Razor Pages

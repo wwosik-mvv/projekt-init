@@ -107,10 +107,10 @@ Miejsce na odpowiedź pod każdym otwartym pytaniem to pusta linia cytatu:
 
 ## Kod
 
-Kod, identyfikatory, nazwy folderów w kodzie, komentarze i komunikaty logów są **po angielsku**.
-**Słownictwo dziedzinowe idzie za językiem projektu**: `Vertrag` zamiast `Contract`, jeśli
-dziedzina jest niemiecka — granica biegnie między tym, co dziedzinowe, a tym, co techniczne,
-nie między kodem a prozą.
+Kod, identyfikatory, nazwy folderów w kodzie, komentarze, komunikaty logów oraz **nazwy tabel
+i kolumn w bazie danych** są **bez wyjątku po angielsku** — łącznie ze słownictwem dziedzinowym.
+Czyli `Contract` i tabela `contracts`, a nie `Umowa` i `umowy`. Granica biegnie między kodem
+a tym, co czyta użytkownik, nie między tym, co dziedzinowe, a tym, co techniczne.
 
 Wszystko, co czyta użytkownik — nagłówki, etykiety, przyciski, komunikaty walidacji, stany puste,
 teksty błędów — jest po polsku.

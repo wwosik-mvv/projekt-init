@@ -1,2 +1,1 @@
-The UI is server-rendered Razor Pages with SignalR for live updates — there is no separate
-frontend project.
+The UI is server-rendered Razor Pages — there is no separate frontend project.

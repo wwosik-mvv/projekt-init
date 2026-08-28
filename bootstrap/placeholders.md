@@ -27,9 +27,23 @@ separate set of templates.
 
 | Token | Default | Overridden by |
 | ----- | ------- | ------------- |
-| `{{BackendRoot}}` | `src/server` | `monorepo-layout` sets `backend` |
+| `{{BackendRoot}}` | `src/server` | `monorepo-layout` and `dotnet-razor-pages` both set `backend` |
 | `{{FrontendRoot}}` | `src/frontend` | `monorepo-layout` sets `frontend` |
 | `{{ProjectSdk}}` | `Microsoft.NET.Sdk.Worker` | `dotnet-web-api` sets `Microsoft.NET.Sdk.Web` |
+| `{{ProjectToRepoRoot}}` | **derived** — see below | never set by hand |
+
+`{{ProjectToRepoRoot}}` is the relative path from the server project folder back up to the repo
+root, used by `appsettings.json` to locate `data/` and `logs/` during local development. Compute
+it, never guess it: one `..` per path segment in `{{BackendRoot}}`, plus one more for the project
+folder itself.
+
+| `{{BackendRoot}}` | Project folder | `{{ProjectToRepoRoot}}` |
+| ----------------- | -------------- | ----------------------- |
+| `src/server` | `src/server/X.Server/` | `../../..` |
+| `backend` | `backend/X.Server/` | `../..` |
+
+Getting this wrong is quiet rather than loud: the app creates `data/` and `logs/` in the wrong
+place instead of failing, so check it once against the running app.
 
 A component may override a token's default. Where two do, the one later in the resolved
 component order wins — so declare the override in the more specific component, and state it in

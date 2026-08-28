@@ -8,8 +8,9 @@ slots, so it determines how the generated documents read.
 
 ## `dotnet-razor` — .NET backend with server-rendered UI
 
-Single .NET app, Razor Pages UI, no separate frontend project. The
-[planowanie-wycieczek](../README.md) shape.
+Single .NET app, Razor Pages UI, no separate frontend project. The backend sits at the repo root
+in `backend/` — with no frontend to pair it with, there is nothing for a `src/` level to group.
+SignalR is not included; add it if a feature actually needs live updates.
 
 ```
 core, spec-workflow, dotnet-solution, dotnet-web-api, dotnet-razor-pages,

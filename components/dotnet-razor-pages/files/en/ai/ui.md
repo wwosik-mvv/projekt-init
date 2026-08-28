@@ -1,7 +1,8 @@
 # UI conventions
 
-The UI is server-rendered Razor Pages. Interactivity that needs live updates goes through
-SignalR; anything else is a normal form post or a page navigation.
+The UI is server-rendered Razor Pages. Interactivity is a normal form post or a page
+navigation. Live updates are not wired up: if a feature genuinely needs them, add SignalR as part
+of that feature and record the decision in [memory.md](memory.md).
 
 ## Structure
 
@@ -24,9 +25,10 @@ SignalR; anything else is a normal form post or a page navigation.
 
 ## Language
 
-Markup, tag helpers, `@model` declarations, class and member names, and comments are **English**.
-Everything the user reads — headings, labels, buttons, validation messages, empty states,
-error text — is in the project language. See [AGENTS.md](../AGENTS.md).
+Markup, tag helpers, `@model` declarations, class and member names, and comments are
+**English**, domain vocabulary included. Everything the user reads — headings, labels, buttons,
+validation messages, empty states, error text — is in the project language. See
+[AGENTS.md](../AGENTS.md).
 
 ## Wording
 

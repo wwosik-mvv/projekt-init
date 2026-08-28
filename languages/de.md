@@ -113,10 +113,11 @@ Der Antwortplatz unter jeder offenen Frage ist eine leere Zitatzeile:
 
 ## Code
 
-Code, Bezeichner, Ordnernamen im Code, Kommentare und Log-Meldungen sind **englisch**.
-**Fachvokabular folgt der Projektsprache**: `Vertrag`, nicht `Contract`, wenn die Fachdomäne
-deutsch ist — die Trennlinie verläuft zwischen Fachlichem und Technischem, nicht zwischen Code
-und Prosa.
+Code, Bezeichner, Ordnernamen im Code, Kommentare, Log-Meldungen sowie **Tabellen- und
+Spaltennamen in der Datenbank** sind **ausnahmslos englisch** — Fachvokabular eingeschlossen.
+Also `Contract` und die Tabelle `contracts`, nicht `Vertrag` und `vertraege`. Die Trennlinie
+verläuft zwischen Code und dem, was ein Benutzer liest, nicht zwischen Fachlichem und
+Technischem.
 
 Alles, was der Benutzer liest — Überschriften, Beschriftungen, Schaltflächen,
 Validierungsmeldungen, Leerzustände, Fehlertexte —, ist auf Deutsch.

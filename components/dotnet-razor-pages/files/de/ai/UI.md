@@ -1,8 +1,9 @@
 # UI-Konventionen
 
-Die Oberfläche besteht aus serverseitig gerenderten Razor Pages. Interaktivität, die
-Live-Aktualisierung braucht, läuft über SignalR; alles andere ist ein normales Formular-Post
-oder eine Seitennavigation.
+Die Oberfläche besteht aus serverseitig gerenderten Razor Pages. Interaktivität ist ein
+normales Formular-Post oder eine Seitennavigation. Live-Aktualisierung ist nicht verdrahtet:
+braucht ein Feature sie wirklich, kommt SignalR als Teil dieses Features dazu und die
+Entscheidung wird in [Gedächtnis.md](Gedächtnis.md) festgehalten.
 
 ## Aufbau
 
@@ -26,9 +27,9 @@ oder eine Seitennavigation.
 ## Sprache
 
 Markup, Tag Helper, `@model`-Deklarationen, Klassen- und Membernamen sowie Kommentare sind
-**englisch**. Alles, was der Benutzer liest — Überschriften, Beschriftungen, Schaltflächen,
-Validierungsmeldungen, Leerzustände, Fehlertexte —, ist auf Deutsch. Siehe
-[AGENTS.md](../AGENTS.md).
+**englisch**, Fachvokabular eingeschlossen. Alles, was der Benutzer liest — Überschriften,
+Beschriftungen, Schaltflächen, Validierungsmeldungen, Leerzustände, Fehlertexte —, ist auf
+Deutsch. Siehe [AGENTS.md](../AGENTS.md).
 
 ## Formulierungen
 

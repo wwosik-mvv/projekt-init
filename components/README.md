@@ -25,7 +25,7 @@ in directory and file names.
 | [spec-workflow](spec-workflow/) | The idea → plan → implement → verify → archive lifecycle and the `spec/` tree. |
 | [dotnet-solution](dotnet-solution/) | .NET solution skeleton: `.slnx`, central packages, `.editorconfig`, `nuget.config`, sibling tests. |
 | [dotnet-web-api](dotnet-web-api/) | ASP.NET Core host, Serilog, local HTTPS, minimal APIs, OpenAPI + Scalar. Owns `Program.cs`. |
-| [dotnet-razor-pages](dotnet-razor-pages/) | Server-rendered UI: Razor Pages and SignalR. |
+| [dotnet-razor-pages](dotnet-razor-pages/) | Server-rendered UI: Razor Pages, backend at the repo root. |
 | [spa-frontend](spa-frontend/) | Angular SPA under the frontend root, pnpm, generated API client. |
 | [tools-dotnet](tools-dotnet/) | `tools/` plus the `run.ps1` / `run.sh` launcher (verbs first, then tool dispatch). |
 | [tools-npm](tools-npm/) | `tools/npm` for ready-made npm packages used as-is. |

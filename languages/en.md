@@ -99,7 +99,7 @@ Answer slot under each open question is a blank blockquote line:
 
 ## Code
 
-Everything is English: domain vocabulary, technical identifiers, comments, log messages. In an
-English project there is no split to manage — the distinction only matters in `de.md` and
-`pl.md`, where domain vocabulary follows the project language while technical, framework, and
-structural identifiers stay English.
+Everything is English: identifiers, comments, log messages, database table and column names,
+and every string the user reads. In an English project there is no split to manage — but the rule
+is the same one `de.md` and `pl.md` state, where only user-facing text is in the project
+language.

@@ -24,9 +24,9 @@ usuń go i używaj `pnpm`.
 
 ## Język
 
-Kod, identyfikatory, nazwy folderów i komentarze są **po angielsku**; słownictwo dziedzinowe
-w nich idzie za językiem projektu. Każdy tekst czytany przez użytkownika jest w języku projektu
-i trzymany poza logiką komponentów, żeby dało się go znaleźć i zmienić w jednym miejscu.
+Kod, identyfikatory, nazwy folderów i komentarze są **po angielsku**, łącznie ze słownictwem
+dziedzinowym. Każdy tekst czytany przez użytkownika jest w języku projektu i trzymany poza logiką
+komponentów, żeby dało się go znaleźć i zmienić w jednym miejscu.
 
 ## Style
 

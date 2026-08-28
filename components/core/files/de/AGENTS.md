@@ -24,8 +24,9 @@ Konfigurationsdateien, Inhalt eingeschlossen. Auch die Ordnernamen `ai/`, `spec/
 `.github/` und die Dateien `AGENTS.md`, `CLAUDE.md`, `README.md` stehen fest — aber alles
 darin ist in der Projektsprache.
 
-Im Code sind Bezeichner, Kommentare und Log-Meldungen englisch; **Fachvokabular folgt der
-Projektsprache**. Alles, was der Benutzer liest, ist deutsch.
+Im Code und in der Datenbank ist **alles englisch** — Bezeichner, Tabellen- und Spaltennamen,
+Kommentare, Log-Meldungen, Fachvokabular eingeschlossen. Nur was der Benutzer liest, ist
+deutsch.
 
 ## Feste Regeln
 

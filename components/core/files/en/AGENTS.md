@@ -24,8 +24,9 @@ configuration files, contents included. The folder names `ai/`, `spec/`, `docs/`
 and the files `AGENTS.md`, `CLAUDE.md`, `README.md` are also fixed — but everything inside
 them is in the project language.
 
-In code, both domain vocabulary and technical identifiers are English, and so is every string
-shown to the user.
+In code and in the database everything is English — identifiers, table and column names,
+comments, log messages, domain vocabulary included. Only the strings a user reads are in the
+project language, which here is also English.
 
 ## Hard rules
 

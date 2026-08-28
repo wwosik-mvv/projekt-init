@@ -24,8 +24,9 @@ wszystkie pliki konfiguracyjne, razem z ich zawartością. Nazwy folderów `ai/`
 `.github/` i pliki `AGENTS.md`, `CLAUDE.md`, `README.md` też są stałe — ale wszystko w środku
 jest w języku projektu.
 
-W kodzie identyfikatory, komentarze i komunikaty logów są angielskie; **słownictwo dziedzinowe
-idzie za językiem projektu**. Wszystko, co czyta użytkownik, jest po polsku.
+W kodzie i w bazie danych **wszystko jest po angielsku** — identyfikatory, nazwy tabel
+i kolumn, komentarze, komunikaty logów, łącznie ze słownictwem dziedzinowym. Po polsku jest
+tylko to, co czyta użytkownik.
 
 ## Zasady bezwzględne
 

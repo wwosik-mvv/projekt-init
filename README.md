@@ -35,8 +35,9 @@ domain vocabulary in code. It does **not** apply to the repo's technical skeleto
   project language.
 - **English throughout, including content:** `src/`, `tools/`, `deploy/`, `logs/`, `data/`,
   `.tmp/`, `run.ps1`, `run.sh`, and every configuration file.
-- **In code:** domain vocabulary follows the project language; technical, framework, and
-  structural identifiers stay English.
+- **In code and in the database:** English, without exception — identifiers, class and member
+  names, table and column names, comments, log messages, domain vocabulary included. Only the
+  strings a user reads are in the project language.
 
 Full per-language tables are in [languages/](languages/).
 
