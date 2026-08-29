@@ -19,5 +19,5 @@ Plandateien heißen `NNNNN Titel.md`, oder `NNNNN {{RefPrefix}}nnnn Titel.md`, w
 Referenz bekannt ist. Die Nummer ist über das gesamte `spec/` fortlaufend, und der Dateiname
 ändert sich beim Verschieben zwischen den Ordnern nicht.
 
-- Änderungen nie committen oder stagen — das macht der Mensch.
+- Fertige Arbeit committen; nach einer erledigten Aufgabe rebasen und pushen.
 - Analysen nie im Chat schreiben; die Datei schreiben.

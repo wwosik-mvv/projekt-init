@@ -32,4 +32,7 @@ Those describe the catalog. The target repo's versions come from
 - The `.csproj` files under `components/` are templates, not projects. An IDE's C# language
   server may restore and build them in place; `bin/` and `obj/` are git-ignored and are never
   part of a template.
-- Never commit or stage changes — the human handles all git operations.
+- **Commit finished work by default**, covering what that work touched and nothing else.
+- **After a major task: rebase onto the tracked upstream branch, resolve conflicts, push.** Ask
+  whenever a conflict resolution is not obvious. Never plain `--force`; `--force-with-lease` only
+  on a branch nobody else pushes to.

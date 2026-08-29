@@ -18,5 +18,5 @@ Plan files are named `NNNNN Title.md`, or `NNNNN {{RefPrefix}}nnnn Title.md` whe
 known. The number is sequential across all of `spec/`, and the filename does not change as the
 file moves between folders.
 
-- Never commit or stage changes — the human does that.
+- Commit finished work; rebase and push once a task is complete.
 - Never write an analysis into chat; write the file.

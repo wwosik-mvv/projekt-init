@@ -37,7 +37,10 @@ Once the plan is accepted and implementation is requested:
 3. Append an **Implementation notes** chapter: decisions taken along the way, compromises,
    deviations from the plan, warnings, things worth attention during verification, loose ends
    worth considering later.
-4. In chat, say only that the task is done. **No summary** — the detail is in the file.
+4. **Commit** the implementation and the moved plan file together.
+5. **Rebase and push** — this counts as a major task. Resolve conflicts, asking if the right
+   resolution is not obvious.
+6. In chat, say only that the task is done. **No summary** — the detail is in the file.
 
 ## 5. Verify
 
@@ -55,7 +58,8 @@ change.
 
 ## Fixed rules
 
-- **Never commit or stage anything.** Every git operation is the human's.
+- **Commit finished work**, and rebase and push after a completed task — see the Git section
+  of [standards.md](standards.md).
 - Temporary and scratch files go in the repo-root `.tmp/`, never system temp or AppData.
 - All project memory stays shared in `ai/`.
 <!-- slot: workflow-extra -->

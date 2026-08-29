@@ -18,5 +18,5 @@ Pliki planów nazywają się `NNNNN Tytuł.md`, albo `NNNNN {{RefPrefix}}nnnn Ty
 jest zewnętrzny numer. Numer jest ciągły w obrębie całego `spec/`, a nazwa pliku nie zmienia się
 przy przenoszeniu między folderami.
 
-- Nigdy nie commituj ani nie stage'uj zmian — robi to człowiek.
+- Commituj skończoną pracę; po zakończonym zadaniu zrób rebase i push.
 - Nigdy nie pisz analizy na czacie; napisz plik.

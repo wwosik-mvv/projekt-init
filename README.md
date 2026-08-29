@@ -26,8 +26,8 @@ copy of the conventions that apply to it, so it never depends on this repo being
 
 ## Language model
 
-The project language applies to prose, plans, documentation, UI text, commit messages, and
-domain vocabulary in code. It does **not** apply to the repo's technical skeleton.
+The project language applies to prose, plans, documentation, UI text, and commit messages. It
+does **not** apply to the repo's technical skeleton, and it does **not** apply to code.
 
 - **Fixed English names, translated contents:** `ai/`, `spec/`, `docs/`, `.github/`,
   `AGENTS.md`, `CLAUDE.md`, `README.md`. The folders keep these exact names in every
