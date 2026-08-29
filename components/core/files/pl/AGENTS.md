@@ -30,8 +30,11 @@ tylko to, co czyta użytkownik.
 
 ## Zasady bezwzględne
 
-- **Nigdy nie commituj ani nie stage'uj.** Wszystkie operacje gita robi człowiek. Gotową pracę
-  zostaw w working tree i napisz tylko, że zadanie jest skończone.
+- **Skończoną pracę domyślnie commituj.** Kiedy zadanie jest zrobione, zacommituj to, co
+  zmieniło — nie zostawiaj jej w working tree do znalezienia przez człowieka. Szczegóły
+  w [ai/standardy.md](ai/standardy.md).
+- **Po większym zadaniu: rebase, potem push.** Konflikty rozwiązuj po drodze, a gdy właściwe
+  rozwiązanie nie jest oczywiste — pytaj.
 - **Pliki tymczasowe i robocze trafiają do `.tmp/`** w katalogu głównym repo (ignorowanego przez
   gita) — nigdy do systemowego katalogu tymczasowego ani do AppData.
 - **Cała pamięć projektu jest wspólna, w `ai/`** — nigdy w lokalnej pamięci żadnego narzędzia na

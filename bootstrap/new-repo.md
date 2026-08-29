@@ -87,8 +87,8 @@ is a bug.
    which stay untracked entirely.
 2. Leave `spec/` lifecycle folders in place with `.gitkeep` files so the structure survives a
    clone.
-3. `git init` if the target is not already a repo. **Do not stage or commit anything** — the
-   human handles all git operations, here and in every generated repo.
+3. `git init` if the target is not already a repo, then **commit the scaffold** as the initial
+   commit. Do not push: a fresh repo has no remote yet, and choosing one is the human's call.
 4. Run the verification checklist below and report the result.
 
 ## Verification checklist
@@ -102,7 +102,7 @@ is a bug.
 - [ ] Folder and file names match the chosen language's table in `languages/<lang>.md`.
 - [ ] `src/`, `tools/`, `run.ps1`, `run.sh` and all config files are English.
 - [ ] The solution builds, if a .NET component was selected.
-- [ ] Nothing is staged or committed.
+- [ ] The scaffold is committed, and the working tree is clean.
 
 ## What you do not do
 

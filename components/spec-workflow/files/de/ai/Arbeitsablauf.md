@@ -39,7 +39,10 @@ Sobald der Plan akzeptiert ist und die Umsetzung angefragt wird:
 3. Ein Kapitel **Implementierungsnotizen** anhängen: unterwegs getroffene Entscheidungen,
    Kompromisse, Abweichungen vom Plan, Warnungen, worauf bei der Prüfung zu achten ist, offene
    Punkte für später.
-4. Im Chat **nur** melden, dass die Aufgabe erledigt ist. **Keine Zusammenfassung** — die
+4. Umsetzung und verschobene Plandatei zusammen **committen**.
+5. **Rebasen und pushen** — das zählt als größere Aufgabe. Konflikte auflösen und nachfragen,
+   wenn die richtige Auflösung nicht offensichtlich ist.
+6. Im Chat **nur** melden, dass die Aufgabe erledigt ist. **Keine Zusammenfassung** — die
    Einzelheiten stehen in der Datei.
 
 ## 5. Verifizieren
@@ -59,7 +62,8 @@ was sich ändern soll.
 
 ## Feste Regeln
 
-- **Niemals committen oder stagen.** Jede Git-Operation gehört dem Menschen.
+- **Fertige Arbeit committen**, und nach einer erledigten Aufgabe rebasen und pushen — siehe
+  den Git-Abschnitt in [Standards.md](Standards.md).
 - Temporäre Dateien und Scratch-Dateien gehören ins `.tmp/` im Repo-Root, nie ins System-Temp
   oder nach AppData.
 - Das gesamte Projektgedächtnis bleibt gemeinsam in `ai/`.

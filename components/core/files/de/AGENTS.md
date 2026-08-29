@@ -30,8 +30,11 @@ deutsch.
 
 ## Feste Regeln
 
-- **Niemals committen oder stagen.** Alle Git-Operationen übernimmt der Mensch. Fertige Arbeit
-  bleibt im Working Tree; melde nur, dass die Aufgabe erledigt ist.
+- **Fertige Arbeit wird standardmäßig committet.** Ist eine Aufgabe erledigt, wird committet,
+  was sie berührt hat — nichts bleibt im Working Tree liegen, damit der Mensch es findet.
+  Einzelheiten in [ai/Standards.md](ai/Standards.md).
+- **Nach einer größeren Aufgabe: rebasen, dann pushen.** Konflikte werden dabei aufgelöst; ist
+  die richtige Auflösung nicht offensichtlich, wird nachgefragt.
 - **Temporäre Dateien und Scratch-Dateien gehören ins `.tmp/`** im Repo-Root (git-ignoriert) —
   niemals ins System-Temp, niemals nach AppData.
 - **Das gesamte Projektgedächtnis liegt gemeinsam in `ai/`** — nie im geräte-lokalen Gedächtnis

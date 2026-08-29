@@ -38,7 +38,10 @@ Kiedy plan jest zaakceptowany i pada prośba o realizację:
 3. Dopisz rozdział **Notatki z implementacji**: decyzje podjęte po drodze, kompromisy,
    odstępstwa od planu, ostrzeżenia, na co zwrócić uwagę przy weryfikacji, otwarte punkty na
    przyszłość.
-4. Na czacie napisz **tylko**, że zadanie jest skończone. **Bez podsumowania** — szczegóły są
+4. **Zacommituj** implementację razem z przeniesionym plikiem planu.
+5. **Zrób rebase i push** — to liczy się jako większe zadanie. Rozwiąż konflikty, pytając, gdy
+   właściwe rozwiązanie nie jest oczywiste.
+6. Na czacie napisz **tylko**, że zadanie jest skończone. **Bez podsumowania** — szczegóły są
    w pliku.
 
 ## 5. Weryfikacja
@@ -56,7 +59,8 @@ Analizy często poprzedzają plany: analiza ustala, jak jest; plan proponuje, co
 
 ## Zasady bezwzględne
 
-- **Nigdy nie commituj ani nie stage'uj.** Każda operacja gita należy do człowieka.
+- **Commituj skończoną pracę**, a po zakończonym zadaniu zrób rebase i push — zobacz sekcję
+  Git w [standardy.md](standardy.md).
 - Pliki tymczasowe i robocze trafiają do `.tmp/` w katalogu głównym repo, nigdy do systemowego
   katalogu tymczasowego ani do AppData.
 - Cała pamięć projektu zostaje wspólna, w `ai/`.

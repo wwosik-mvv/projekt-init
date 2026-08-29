@@ -30,8 +30,11 @@ project language, which here is also English.
 
 ## Hard rules
 
-- **Never commit or stage anything.** The human handles every git operation. Leave finished
-  work in the working tree and say the task is done.
+- **Commit finished work by default.** When a task is done, commit what it touched — do not
+  leave it in the working tree for the human to find. Details in
+  [ai/standards.md](ai/standards.md).
+- **After a major task: rebase, then push.** Resolve conflicts on the way, and ask whenever the
+  right resolution is not obvious.
 - **Temporary and scratch files go in `.tmp/`** at the repo root (git-ignored) — never the
   system temp directory, never AppData.
 - **All project memory is shared in `ai/`** — never in a tool's device-local memory, so every
