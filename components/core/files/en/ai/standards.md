@@ -40,6 +40,7 @@ repo or a local drive.
   working tree is work the human has to notice, review and commit by hand.
 - **Commit what the task touched, and nothing else.** An unrelated fix is its own commit.
 - Commit messages are in the project language, like the rest of the prose.
+- Never add a `Co-Authored-By` trailer to commit messages.
 - **Never commit secrets, build output, or anything `.gitignore` covers.** If something ignored
   genuinely needs to be tracked, that is a question for the human, not a decision to make.
 - **Do not commit a broken tree.** If the build or the tests fail, say so and stop — a red commit

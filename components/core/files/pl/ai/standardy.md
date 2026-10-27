@@ -41,6 +41,7 @@ odnośnikiem do innego repo ani do lokalnego dysku.
   ręcznie.
 - **Commituj to, co zadanie zmieniło — i nic więcej.** Niezwiązana poprawka to osobny commit.
 - Wiadomości commitów są w języku projektu, tak jak reszta prozy.
+- Nigdy nie dodawaj do wiadomości commitów stopki `Co-Authored-By`.
 - **Nigdy nie commituj sekretów, wyników builda ani niczego, co obejmuje `.gitignore`.** Jeśli
   coś ignorowanego naprawdę musi trafić do repo, to pytanie do człowieka, a nie własna decyzja.
 - **Nie commituj zepsutego stanu.** Jeśli build albo testy nie przechodzą, powiedz to i zatrzymaj

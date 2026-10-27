@@ -43,6 +43,7 @@ einem Verweis auf ein anderes Repo oder ein lokales Laufwerk.
 - **Committet wird, was die Aufgabe berührt hat — sonst nichts.** Eine unabhängige Korrektur ist
   ein eigener Commit.
 - Commit-Nachrichten sind in der Projektsprache, wie die übrige Prosa.
+- Commit-Nachrichten niemals um einen `Co-Authored-By`-Trailer ergänzen.
 - **Niemals Secrets, Build-Ausgaben oder etwas committen, das `.gitignore` abdeckt.** Muss etwas
   Ignoriertes wirklich versioniert werden, ist das eine Frage an den Menschen und keine eigene
   Entscheidung.
