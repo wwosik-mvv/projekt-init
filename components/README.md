@@ -1,12 +1,14 @@
 # Components
 
-One folder per component. A project is assembled from a set of them —
+Component folders are grouped by category for browsing. A project is assembled from a set of
+components —
 see [../bootstrap/recipes.md](../bootstrap/recipes.md).
+Categories are organizational only; components are selected by their IDs.
 
 ## Layout of a component
 
 ```
-<id>/
+<category>/<id>/
   component.md        metadata, in English: requires, conflicts, files, slots, fragments
   files/_/…           verbatim files, language-neutral
   files/<lang>/…      verbatim files, already written in that language
@@ -19,22 +21,22 @@ in directory and file names.
 
 ## The catalog
 
-| Component | What it adds |
-| --------- | ------------ |
-| [core](core/) | Entry points, `ai/`, hard rules. Always included; owns the repo-level slotted documents. |
-| [spec-workflow](spec-workflow/) | The idea → plan → implement → verify → archive lifecycle and the `spec/` tree. |
-| [dotnet-solution](dotnet-solution/) | .NET solution skeleton: `.slnx`, central packages, `.editorconfig`, `nuget.config`, sibling tests. |
-| [dotnet-web-api](dotnet-web-api/) | ASP.NET Core host, Serilog, local HTTPS, minimal APIs, OpenAPI + Scalar. Owns `Program.cs`. |
-| [dotnet-razor-pages](dotnet-razor-pages/) | Server-rendered UI: Razor Pages, backend at the repo root. |
-| [spa-frontend](spa-frontend/) | Angular SPA under the frontend root, pnpm, generated API client. |
-| [tools-dotnet](tools-dotnet/) | `tools/` plus the `run.ps1` / `run.sh` launcher (verbs first, then tool dispatch). |
-| [tools-npm](tools-npm/) | `tools/npm` for ready-made npm packages used as-is. |
-| [ci-azure-devops](ci-azure-devops/) | Azure DevOps pipelines. |
-| [infra-terraform](infra-terraform/) | Terraform conventions for cloud infrastructure. |
-| [monorepo-layout](monorepo-layout/) | Root-level `backend/` and `frontend/` with per-area `AGENTS.md`. |
-| [jira-refs](jira-refs/) | JIRA ticket keys in plan filenames and a JIRA story chapter in plans. |
-| [docs-arc42](docs-arc42/) | Structured `docs/`: arc42 documentation, user manual, knowledge base. |
-| [formatting-prettier](formatting-prettier/) | Prettier for Markdown, enforced by a pre-commit hook. |
+| Category | Component | What it adds |
+| -------- | --------- | ------------ |
+| Foundation | [core](foundation/core/) | Entry points, `ai/`, hard rules. Always included; owns the repo-level slotted documents. |
+| Foundation | [monorepo-layout](foundation/monorepo-layout/) | Root-level `backend/` and `frontend/` with per-area `AGENTS.md`. |
+| Application | [dotnet-solution](application/dotnet-solution/) | .NET solution skeleton: `.slnx`, central packages, `.editorconfig`, `nuget.config`, sibling tests. |
+| Application | [dotnet-web-api](application/dotnet-web-api/) | ASP.NET Core host, Serilog, local HTTPS, minimal APIs, OpenAPI + Scalar. Owns `Program.cs`. |
+| Application | [dotnet-razor-pages](application/dotnet-razor-pages/) | Server-rendered UI: Razor Pages, backend at the repo root. |
+| Application | [spa-frontend](application/spa-frontend/) | Angular SPA under the frontend root, pnpm, generated API client. |
+| Workflow | [spec-workflow](workflow/spec-workflow/) | The idea → plan → implement → verify → archive lifecycle and the `spec/` tree. |
+| Workflow | [jira-refs](workflow/jira-refs/) | JIRA ticket keys in plan filenames and a JIRA story chapter in plans. |
+| Tooling | [tools-dotnet](tooling/tools-dotnet/) | `tools/` plus the `run.ps1` / `run.sh` launcher (verbs first, then tool dispatch). |
+| Tooling | [tools-npm](tooling/tools-npm/) | `tools/npm` for ready-made npm packages used as-is. |
+| Tooling | [formatting-prettier](tooling/formatting-prettier/) | Prettier for Markdown, enforced by a pre-commit hook. |
+| Delivery | [ci-azure-devops](delivery/ci-azure-devops/) | Azure DevOps pipelines. |
+| Delivery | [infra-terraform](delivery/infra-terraform/) | Terraform conventions for cloud infrastructure. |
+| Documentation | [docs-arc42](documentation/docs-arc42/) | Structured `docs/`: arc42 documentation, user manual, knowledge base. |
 
 ## Slots
 

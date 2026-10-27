@@ -12,7 +12,7 @@ no re-explaining them per project.
 | Path | Purpose |
 | ---- | ------- |
 | [bootstrap/](bootstrap/) | The procedure an agent follows to create a new repo, plus recipes and placeholder reference. |
-| [components/](components/) | The building blocks. One folder per component: its files, its documentation fragments, its metadata. |
+| [components/](components/) | The building blocks, grouped into category folders. Each component keeps its files, documentation fragments, and metadata together. |
 | [languages/](languages/) | Per-language conventions: translated names, casing, section headings, commit language. |
 
 ## Design in one paragraph
@@ -43,6 +43,6 @@ Full per-language tables are in [languages/](languages/).
 
 ## Changing a template
 
-Templates in `components/*/files/<lang>/` and `components/*/fragments/<lang>/` are **parallel
-copies, not translations generated on demand**. A change to one language variant must be
-applied to all of them in the same edit — there is no tooling that checks this.
+Templates in `components/*/*/files/<lang>/` and `components/*/*/fragments/<lang>/` are
+**parallel copies, not translations generated on demand**. A change to one language variant
+must be applied to all of them in the same edit — there is no tooling that checks this.

@@ -11,7 +11,7 @@ slot assembly, and placeholder substitution, in that order.
 
 **Do not copy this repo's own `AGENTS.md`, `README.md`, or `CLAUDE.md` into the target repo.**
 Those describe the catalog. The target repo's versions come from
-[components/core/](components/core/).
+[components/foundation/core/](components/foundation/core/).
 
 ## 2. You were asked to change the pattern itself
 
