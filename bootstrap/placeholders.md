@@ -27,7 +27,7 @@ separate set of templates.
 
 | Token | Default | Overridden by |
 | ----- | ------- | ------------- |
-| `{{BackendRoot}}` | `src/server` | `monorepo-layout` and `dotnet-razor-pages` both set `backend` |
+| `{{BackendRoot}}` | `src/server` | `monorepo-layout` and `dotnet-razor-pages` both set `backend`; `dotnet-library` sets `src` |
 | `{{FrontendRoot}}` | `src/frontend` | `monorepo-layout` sets `frontend` |
 | `{{ProjectSdk}}` | `Microsoft.NET.Sdk.Worker` | `dotnet-web-api` sets `Microsoft.NET.Sdk.Web` |
 | `{{ProjectToRepoRoot}}` | **derived** — see below | never set by hand |

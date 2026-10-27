@@ -37,6 +37,23 @@ spa-frontend, tools-dotnet, tools-npm, ci-azure-devops, infra-terraform,
 jira-refs, docs-arc42
 ```
 
+## `dotnet-lib` — .NET class library
+
+A library published as a NuGet package, no server and no frontend. Uses `dotnet-library` instead
+of `dotnet-solution`.
+
+```
+core, spec-workflow, dotnet-library, tools-dotnet
+```
+
+## `dotnet-cli` — .NET command-line tool
+
+The library plus a `System.CommandLine` app packaged as a .NET tool.
+
+```
+core, spec-workflow, dotnet-library, dotnet-cli, tools-dotnet
+```
+
 ## Choosing à la carte
 
 Common adjustments that do not need a new recipe:

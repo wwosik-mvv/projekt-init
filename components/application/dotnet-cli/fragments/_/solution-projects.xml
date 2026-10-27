@@ -1,0 +1,2 @@
+  <Project Path="{{RootNamespace}}.Cli/{{RootNamespace}}.Cli.csproj" />
+  <Project Path="{{RootNamespace}}.Cli.Tests/{{RootNamespace}}.Cli.Tests.csproj" />

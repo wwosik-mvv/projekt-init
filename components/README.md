@@ -26,6 +26,8 @@ in directory and file names.
 | Foundation | [core](foundation/core/) | Entry points, `ai/`, hard rules. Always included; owns the repo-level slotted documents. |
 | Foundation | [monorepo-layout](foundation/monorepo-layout/) | Root-level `backend/` and `frontend/` with per-area `AGENTS.md`. |
 | Application | [dotnet-solution](application/dotnet-solution/) | .NET solution skeleton: `.slnx`, central packages, `.editorconfig`, `nuget.config`, sibling tests. |
+| Application | [dotnet-library](application/dotnet-library/) | Standalone .NET class library: `.slnx`, central packages, `.editorconfig`, `nuget.config`, sibling tests. Replaces `dotnet-solution`. |
+| Application | [dotnet-cli](application/dotnet-cli/) | `System.CommandLine` app packaged as a .NET tool, on top of `dotnet-library`. |
 | Application | [dotnet-web-api](application/dotnet-web-api/) | ASP.NET Core host, Serilog, local HTTPS, minimal APIs, OpenAPI + Scalar. Owns `Program.cs`. |
 | Application | [dotnet-razor-pages](application/dotnet-razor-pages/) | Server-rendered UI: Razor Pages, backend at the repo root. |
 | Application | [spa-frontend](application/spa-frontend/) | Angular SPA under the frontend root, pnpm, generated API client. |
@@ -52,6 +54,8 @@ any slot; a slot nobody fills is deleted during assembly.
 | `workflow-refs`, `workflow-extra` | `ai/workflow.md` | spec-workflow |
 | `packages` | `Directory.Packages.props` | dotnet-solution |
 | `package-refs` | the server `.csproj` | dotnet-solution |
+| `solution-projects` | `{{RootNamespace}}.slnx` | dotnet-library |
+| `packages` | `Directory.Packages.props` | dotnet-library (alternative to dotnet-solution) |
 | `program-usings`, `program-services`, `program-middleware-early`, `program-middleware`, `program-endpoints` | `Program.cs` | dotnet-web-api |
 | `run-verbs-list`, `run-verbs-ps1` | `run.ps1` | tools-dotnet |
 | `run-verbs-list-sh`, `run-verbs-sh` | `run.sh` | tools-dotnet |
