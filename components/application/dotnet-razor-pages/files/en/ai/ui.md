@@ -24,6 +24,15 @@ of that feature and record the decision in [memory.md](memory.md).
   in [memory.md](memory.md) with the reason.
 - No inline styles, and no JavaScript in the markup beyond a `Scripts` section.
 
+## Asset caching and custom fonts
+
+- Add `asp-append-version="true"` to local CSS and JavaScript references so browsers do not keep
+  using stale assets after a deployment.
+- If custom fonts are used, avoid a visible fallback-to-font flicker: serve the font files locally,
+  define `@font-face` in a Razor partial and generate font URLs through the app's fingerprinting
+  helper (CSS `url()` values are not fingerprinted by `asp-append-version`), preload the critical
+  faces using the exact same generated URLs, and use `font-display: fallback`.
+
 ## Language
 
 Markup, tag helpers, `@model` declarations, class and member names, and comments are

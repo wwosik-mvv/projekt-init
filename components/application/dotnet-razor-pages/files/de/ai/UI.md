@@ -25,6 +25,16 @@ Entscheidung wird in [Gedächtnis.md](Gedächtnis.md) festgehalten.
   Entscheidung mit Begründung in [Gedächtnis.md](Gedächtnis.md) festgehalten.
 - Keine Inline-Styles, und kein JavaScript im Markup außerhalb eines `Scripts`-Abschnitts.
 
+## Asset-Caching und benutzerdefinierte Schriftarten
+
+- Lokale CSS- und JavaScript-Referenzen erhalten `asp-append-version="true"`, damit Browser nach
+  einer Bereitstellung keine veralteten Assets weiterverwenden.
+- Bei benutzerdefinierten Schriftarten ein sichtbares Umschalten von Ersatz- auf Webschrift
+  vermeiden: Schriftdateien lokal bereitstellen, `@font-face` in einem Razor-Partial definieren
+  und die Schrift-URLs dort mit dem Fingerprinting-Helfer der Anwendung erzeugen (CSS-`url()`-Werte
+  werden nicht durch `asp-append-version` versioniert), kritische Schriftschnitte mit genau
+  denselben erzeugten URLs vorladen und `font-display: fallback` verwenden.
+
 ## Sprache
 
 Markup, Tag Helper, `@model`-Deklarationen, Klassen- und Membernamen sowie Kommentare sind

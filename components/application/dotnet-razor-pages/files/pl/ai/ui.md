@@ -24,6 +24,16 @@ w [pamięć.md](pamięć.md).
   zapisz decyzję wraz z uzasadnieniem w [pamięć.md](pamięć.md).
 - Żadnych stylów inline i żadnego JavaScriptu w markupie poza sekcją `Scripts`.
 
+## Cache zasobów i niestandardowe fonty
+
+- Do lokalnych odwołań do CSS i JavaScriptu dodawaj `asp-append-version="true"`, aby przeglądarka
+  po wdrożeniu nie używała starych zasobów.
+- Przy niestandardowych fontach unikaj widocznego migotania przy zamianie fontu zastępczego na
+  właściwy: udostępniaj pliki fontów lokalnie, definiuj `@font-face` w partialu Razor i generuj
+  adresy fontów za pomocą helpera aplikacji, który dodaje fingerprint (wartości CSS `url()` nie są
+  wersjonowane przez `asp-append-version`), preloaduj kluczowe kroje pod dokładnie tymi samymi
+  wygenerowanymi adresami i używaj `font-display: fallback`.
+
 ## Język
 
 Markup, tag helpery, deklaracje `@model`, nazwy klas i składowych oraz komentarze są **po
