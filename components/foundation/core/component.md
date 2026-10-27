@@ -18,6 +18,7 @@ non-negotiable rules that hold in every project regardless of stack.
 | `ai/memory.md` | localized |
 | `docs/README.md` | localized |
 | `.gitignore` | neutral |
+| `.vscode/settings.json` | neutral |
 
 Paths in this table use their **English** names. `AGENTS.md`, `CLAUDE.md` and `README.md` keep
 those names in every language; the files inside `ai/` and `docs/` are renamed per language —
