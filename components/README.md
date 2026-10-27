@@ -37,6 +37,8 @@ in directory and file names.
 | Tooling | [tools-npm](tooling/tools-npm/) | `tools/npm` for ready-made npm packages used as-is. |
 | Tooling | [formatting-prettier](tooling/formatting-prettier/) | Prettier for Markdown, enforced by a pre-commit hook. |
 | Delivery | [ci-azure-devops](delivery/ci-azure-devops/) | Azure DevOps pipelines. |
+| Delivery | [ci-azure-devops-containers](delivery/ci-azure-devops-containers/) | Extends Azure DevOps CI to build and push a container image, then deploy it to an existing Azure Container App. |
+| Delivery | [infra-bicep](delivery/infra-bicep/) | Bicep conventions for cloud infrastructure; alternative to Terraform. |
 | Delivery | [infra-terraform](delivery/infra-terraform/) | Terraform conventions for cloud infrastructure. |
 | Documentation | [docs-arc42](documentation/docs-arc42/) | Structured `docs/`: arc42 documentation, user manual, knowledge base. |
 
@@ -59,6 +61,8 @@ any slot; a slot nobody fills is deleted during assembly.
 | `program-usings`, `program-services`, `program-middleware-early`, `program-middleware`, `program-endpoints` | `Program.cs` | dotnet-web-api |
 | `run-verbs-list`, `run-verbs-ps1` | `run.ps1` | tools-dotnet |
 | `run-verbs-list-sh`, `run-verbs-sh` | `run.sh` | tools-dotnet |
+| `container-deployment` | `azure-devops/build.yml` | ci-azure-devops |
+| `container-deployment` | `azure-devops/build.yml` | ci-azure-devops |
 
 ## Adding a component
 

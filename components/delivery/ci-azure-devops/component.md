@@ -5,7 +5,7 @@ infrastructure rather than to a home server.
 
 - **id:** `ci-azure-devops`
 - **requires:** `core`
-- **conflicts:** any other component owning the build or deployment pipeline
+- **conflicts:** any other component replacing this build/deployment pipeline; slot-filling extensions are compatible
 
 ## Tokens
 
@@ -21,6 +21,14 @@ infrastructure rather than to a home server.
 | `azure-devops/README.md` | neutral |
 
 Pipeline YAML is configuration, so it is English like every other config file.
+
+## Slots it owns
+
+| Document | Slots |
+| -------- | ----- |
+| `azure-devops/build.yml` | `container-deployment` |
+
+The slot is empty unless a pipeline extension fills it.
 
 ## Fragments
 

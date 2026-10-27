@@ -33,3 +33,5 @@ steps:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
+
+  # slot: container-deployment

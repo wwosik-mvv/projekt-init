@@ -37,6 +37,12 @@ spa-frontend, tools-dotnet, tools-npm, ci-azure-devops, infra-terraform,
 jira-refs, docs-arc42
 ```
 
+For Bicep, replace `infra-terraform` with `infra-bicep`. For a containerized workload deployed to
+Azure Container Apps, also select `ci-azure-devops-containers`; it extends the Azure DevOps pipeline
+to build and push the image and update an existing Container App. The registry and Container App
+must already exist, and the two Azure DevOps service connection names are required during scaffold
+setup.
+
 ## `dotnet-lib` — .NET class library
 
 A library published as a NuGet package, no server and no frontend. Uses `dotnet-library` instead

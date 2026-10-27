@@ -4,7 +4,7 @@ Terraform for the project's cloud infrastructure.
 
 - **id:** `infra-terraform`
 - **requires:** `core`
-- **conflicts:** —
+- **conflicts:** `infra-bicep` — choose one infrastructure-as-code option
 
 ## Files
 

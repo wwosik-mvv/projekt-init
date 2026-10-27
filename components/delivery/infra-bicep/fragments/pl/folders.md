@@ -1,0 +1,1 @@
+| `infrastructure/` | Definicje Bicep dla zasobów Azure |

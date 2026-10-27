@@ -57,6 +57,8 @@ its `component.md`.
 | `{{TrackerKey}}` | `jira-refs` | JIRA project key. | — |
 | `{{TrackerBaseUrl}}` | `jira-refs` | JIRA base URL. | — |
 | `{{AzureProject}}` | `ci-azure-devops` | Azure DevOps project name. | — |
+| `{{AcrServiceConnection}}` | `ci-azure-devops-containers` | Azure DevOps Docker Registry service connection for pushing to ACR. | — |
+| `{{AzureServiceConnection}}` | `ci-azure-devops-containers` | Azure DevOps Azure Resource Manager service connection for deployment. | — |
 
 ## Rules
 

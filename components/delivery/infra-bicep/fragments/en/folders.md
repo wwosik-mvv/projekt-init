@@ -1,0 +1,1 @@
+| `infrastructure/` | Bicep definitions for Azure resources |

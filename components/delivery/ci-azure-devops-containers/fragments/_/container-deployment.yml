@@ -1,0 +1,22 @@
+  - task: Docker@2
+    displayName: Build and push container image
+    inputs:
+      command: buildAndPush
+      containerRegistry: "{{AcrServiceConnection}}"
+      repository: $(containerRepository)
+      dockerfile: $(dockerfilePath)
+      buildContext: $(dockerBuildContext)
+      tags: $(Build.BuildId)
+
+  - task: AzureCLI@2
+    displayName: Deploy container to Azure Container Apps
+    inputs:
+      azureSubscription: "{{AzureServiceConnection}}"
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az config set extension.use_dynamic_install=yes_without_prompt
+        az containerapp update \
+          --name "$(containerAppName)" \
+          --resource-group "$(azureResourceGroup)" \
+          --image "$(acrLoginServer)/$(containerRepository):$(Build.BuildId)"
