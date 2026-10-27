@@ -6,3 +6,5 @@
 - **Abschluss ohne Zusammenfassung melden.** Nach der Umsetzung wird nur gemeldet, dass die
   Aufgabe erledigt ist — die Einzelheiten gehören in das Kapitel *Implementierungsnotizen* der
   Plandatei, nicht in den Chat.
+- **Stories vor der Umsetzung claimen.** Niemals eine von einem anderen Agent geclaimte Story
+  umsetzen oder deren Code ändern; Claim- und Freigabeverfahren in `ai/Arbeitsablauf.md` befolgen.

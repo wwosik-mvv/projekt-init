@@ -1,7 +1,7 @@
 # Component: jira-refs
 
-Ties plans to JIRA tickets: the ticket key in the plan filename, a JIRA-ready story chapter in
-the plan body, and the rules for keeping the two in step.
+Ties stories to JIRA tickets: the ticket key in the story filename, a JIRA-ready story chapter
+in the plan body, and the rules for keeping the two in step.
 
 - **id:** `jira-refs`
 - **requires:** `core`, `spec-workflow`

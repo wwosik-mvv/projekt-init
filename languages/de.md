@@ -42,9 +42,10 @@ Ablaufs unabhängig von der Sprache lesbar bleibt; die Lücken sind Absicht:
 | ------ | ------ | ------ |
 | `00` | `00-ideensammlung/` | Rohe Ideen, vom Menschen geschrieben. Eine Datei je Idee oder Thema. Eingefügte User Stories behalten ihre Referenznummer. |
 | `10` | `10-analysen/` | Angeforderte Analysen. Das Ergebnis landet hier in Dateien, nie im Chat. |
-| `50` | `50-entwurf/` | Konkrete, ausiterierte Pläne, die auf die Umsetzung warten. |
-| `60` | `60-prüfung/` | Umgesetzte Aufgaben, die auf die Verifikation durch den Menschen warten. Jede trägt ein Kapitel *Implementierungsnotizen*. |
-| `70` | `70-fertig/` | Verifiziert und freigegeben. |
+| `50` | `50-entwurf/` | Offene Feature-Epics, Meilensteine und Stories, die auf Umsetzung warten. |
+| `55` | `55-in-arbeit/<agent-id>/` | Von einem Agent geclaimte Stories. |
+| `60` | `60-prüfung/` | Umgesetzte Stories, die auf Verifikation durch den Menschen warten. Jede trägt *Implementierungsnotizen*. |
+| `70` | `70-fertig/<epic-id>-<slug>/` | Verifizierte Stories zusammen mit ihrem abgeschlossenen Feature-Epic. |
 
 Dateibenennung darin:
 
@@ -52,14 +53,18 @@ Dateibenennung darin:
 | ------ | ------ | -------- |
 | `00-ideensammlung/` | `<slug>.md`, frei | `live-zusammenarbeit.md` |
 | `10-analysen/` | `JJJJ-MM-TT <slug>.md` | `2026-08-22 backend-api-vertragsinventar.md` |
-| `50-entwurf/`, `60-prüfung/`, `70-fertig/` | `NNNNN Titel.md`, oder `NNNNN <Referenz> Titel.md`, wenn eine externe Referenz bekannt ist | `00001 Tagesplaner für Reisen.md`, `00010 W-3212 Live-Abgleich des Reiseplans.md` |
+| `50-entwurf/` | `E01-<slug>.md` Epic; `E01-S01-<slug>.md` Feature-Story; `T01-S01-<slug>.md` technische Story; `M01-<slug>.md` Meilenstein | `E02-anfrageeingang.md`, `E02-S01-id-erzeugung.md`, `T01-S01-speicher.md`, `M01-mvp.md` |
+| `55-in-arbeit/`, `60-prüfung/` | Dieselbe Story-ID und derselbe Dateiname; in `55` unter dem Agent-Ordner | `E02-S01-id-erzeugung.md` |
+| `70-fertig/` | `<epic-id>-<epic-slug>/<story-id>-<story-slug>.md`; die Epic-Datei zieht mit um; technische Stories nutzen `T01-technisch/` | `E02-anfrageeingang/E02-S01-id-erzeugung.md` |
 
 Das Präfix der Referenz ist das Token `{{RefPrefix}}` — standardmäßig `W-`, mit `jira-refs` der
 JIRA-Projektschlüssel.
 
-Die fünfstellige Nummer ist über das gesamte `spec/` fortlaufend: die höchste bereits vergebene
-Nummer in irgendeinem der Ordner plus eins. Der Dateiname ändert sich beim Verschieben zwischen
-den Ordnern nicht.
+Storynummern zählen innerhalb des Feature-Epics oder technischen Containers. Die nächste freie
+`E`-/`M`-ID und Storynummer verwenden; technische Container enthalten höchstens 99 Stories
+(`T01-S99`, dann `T02-S01`). Eine externe Referenz steht nach der Story-ID und vor dem Slug; ihr
+Präfix ist `{{RefPrefix}}` (standardmäßig `W-`, mit `jira-refs` der JIRA-Projektschlüssel). Der
+Storydateiname ändert sich beim Verschieben zwischen Ordnern nicht.
 
 Die Vorlage für Pläne heißt `spec/_vorlage.md`.
 

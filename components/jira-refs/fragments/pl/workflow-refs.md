@@ -1,12 +1,12 @@
 ## Referencje JIRA
 
-Plany w tym repo zwykle odpowiadają zgłoszeniu w JIRA w projekcie `{{TrackerKey}}`
+Stories w tym repo zwykle odpowiadają zgłoszeniu w JIRA w projekcie `{{TrackerKey}}`
 (`{{TrackerBaseUrl}}`).
 
-**W nazwie pliku** klucz zgłoszenia stoi między numerem porządkowym a tytułem:
+**W nazwie pliku** klucz zgłoszenia stoi po ID story, przed slugiem:
 
 ```
-00010 {{TrackerKey}}-533 Polimorfizm wiadomości oparty na refleksji.md
+E02-S05-{{TrackerKey}}-533-polimorfizm-wiadomości-oparty-na-refleksji.md
 ```
 
 **W planie**, na prośbę, wstaw rozdział `## Historyjka JIRA` **bezpośrednio po
@@ -24,5 +24,5 @@ Rozdział zaczyna się linią z zaślepką:
 ```
 
 Kiedy człowiek poda później utworzone ID zgłoszenia, zrób wszystkie trzy rzeczy w jednej
-zmianie: podmień zaślepkę, dopisz ID do nagłówka H1 planu i zmień nazwę pliku planu tak, żeby ID
-stało między numerem a tytułem.
+zmianie: podmień zaślepkę, dopisz ID do nagłówka H1 story i zmień nazwę pliku story tak, żeby ID
+stało po ID story, a przed slugiem.

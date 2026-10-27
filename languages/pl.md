@@ -37,9 +37,10 @@ odczytać niezależnie od języka; luki w numeracji są celowe:
 | ------- | ------ | ------- |
 | `00` | `00-pomysły/` | Surowe pomysły, pisane przez człowieka. Jeden plik na pomysł lub temat. Wklejone user story zachowują swój numer referencyjny. |
 | `10` | `10-analizy/` | Zamówione analizy. Wynik trafia tutaj do pliku, nigdy do czatu. |
-| `50` | `50-do-zrobienia/` | Konkretne, przeiterowane plany czekające na realizację. |
-| `60` | `60-do-sprawdzenia/` | Zrealizowane zadania czekające na weryfikację przez człowieka. Każde ma rozdział *Notatki z implementacji*. |
-| `70` | `70-wykonane/` | Zweryfikowane i zaakceptowane. |
+| `50` | `50-do-zrobienia/` | Otwarte feature epics, milestones i stories czekające na realizację. |
+| `55` | `55-w-toku/<agent-id>/` | Stories claimowane przez agenta. |
+| `60` | `60-do-sprawdzenia/` | Zrealizowane stories czekające na weryfikację przez człowieka. Każde ma *Notatki z implementacji*. |
+| `70` | `70-wykonane/<epic-id>-<slug>/` | Zweryfikowane stories razem z ukończonym feature epikiem. |
 
 Nazewnictwo plików w środku:
 
@@ -47,13 +48,18 @@ Nazewnictwo plików w środku:
 | ------ | ------- | -------- |
 | `00-pomysły/` | `<slug>.md`, dowolnie | `współpraca-na-żywo.md` |
 | `10-analizy/` | `RRRR-MM-DD <slug>.md` | `2026-08-22 inwentaryzacja-kontraktów-api.md` |
-| `50-do-zrobienia/`, `60-do-sprawdzenia/`, `70-wykonane/` | `NNNNN Tytuł.md`, albo `NNNNN <referencja> Tytuł.md`, gdy znany jest zewnętrzny numer | `00001 Planer dnia wycieczki.md`, `00010 W-3212 Synchronizacja planu na żywo.md` |
+| `50-do-zrobienia/` | `E01-<slug>.md` epic; `E01-S01-<slug>.md` feature story; `T01-S01-<slug>.md` techniczne story; `M01-<slug>.md` milestone | `E02-przyjmowanie-zlecen.md`, `E02-S01-generowanie-id.md`, `T01-S01-storage.md`, `M01-mvp.md` |
+| `55-w-toku/`, `60-do-sprawdzenia/` | To samo ID i nazwa story; w `55` w folderze agenta | `E02-S01-generowanie-id.md` |
+| `70-wykonane/` | `<epic-id>-<epic-slug>/<story-id>-<story-slug>.md`; plik epica również jest przenoszony; techniczne stories używają `T01-techniczne/` | `E02-przyjmowanie-zlecen/E02-S01-generowanie-id.md` |
 
 Prefiks referencji to token `{{RefPrefix}}` — domyślnie `W-`, a przy komponencie `jira-refs`
 klucz projektu JIRA.
 
-Pięciocyfrowy numer jest ciągły w obrębie całego `spec/`: najwyższy już użyty w którymkolwiek
-z folderów plus jeden. Nazwa pliku nie zmienia się przy przenoszeniu między folderami.
+Numer story liczy się w obrębie feature epica lub technicznego kontenera. Używaj kolejnego
+wolnego ID `E`/`M` i numeru story; kontener techniczny mieści maksymalnie 99 stories
+(`T01-S99`, potem `T02-S01`). Znana zewnętrzna referencja stoi po ID story i przed slugiem; jej
+prefiks to `{{RefPrefix}}` (domyślnie `W-`, a z `jira-refs` klucz projektu JIRA). Nazwa story nie
+zmienia się przy przenoszeniu między folderami.
 
 Szablon planu nazywa się `spec/_szablon.md`.
 

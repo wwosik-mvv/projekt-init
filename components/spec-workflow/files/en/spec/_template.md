@@ -1,11 +1,11 @@
-# NNNNN Title
+# E01-S01 Short title
 
-<!-- Filename: `NNNNN Title.md`, or `NNNNN {{RefPrefix}}nnnn Title.md` when an external reference is
-     known — the reference sits between the number and the title. The number is sequential
-     across the whole of spec/. -->
+<!-- Filename: `E01-S01-short-title.md` or `T01-S01-short-title.md`; story numbers are counted
+     within their epic/container. If known, put `{{RefPrefix}}nnnn` after the story ID. -->
 
-> Reference: {{RefPrefix}}nnnn (remove if unknown)
 > Status: todo
+> Epic: [E01 Epic title](E01-short-title.md) — or `T01 (technical)`
+> Milestone: [M01 Milestone title](M01-short-title.md) (remove if none)
 
 ## Summary
 

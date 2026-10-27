@@ -33,8 +33,9 @@ regardless of language, with gaps left for later insertions:
 | ------ | ------ | ----- |
 | `00` | `00-brainstorming/` | Raw ideas, written by the human. One file per idea or theme. Pasted external user stories keep their reference. |
 | `10` | `10-analysis/` | Requested analyses. Output goes here in files, never into chat. |
-| `50` | `50-todo/` | Concrete, iterated feature plans awaiting implementation. |
-| `60` | `60-verify/` | Implemented tasks awaiting human verification. Each carries an *Implementation notes* chapter. |
+| `50` | `50-todo/` | Open feature epics, milestones, and stories awaiting implementation. |
+| `55` | `55-in-progress/<agent-id>/` | Stories claimed by an agent. |
+| `60` | `60-verify/` | Implemented stories awaiting human verification. Each carries an *Implementation notes* chapter. |
 | `70` | `70-completed/` | Verified and approved. |
 
 File naming inside them:
@@ -43,13 +44,15 @@ File naming inside them:
 | ------ | ------- | ------- |
 | `00-brainstorming/` | `<slug>.md`, free-form | `live-collaboration.md` |
 | `10-analysis/` | `YYYY-MM-DD <slug>.md` | `2026-08-22 backend-api-contract-inventory.md` |
-| `50-todo/`, `60-verify/`, `70-completed/` | `NNNNN Title.md`, or `NNNNN <ref> Title.md` when an external reference is known | `00001 Trip day planner.md`, `00010 W-3212 Live itinerary sync.md` |
+| `50-todo/` | `E01-<slug>.md` epic; `E01-S01-<slug>.md` feature story; `T01-S01-<slug>.md` technical story; `M01-<slug>.md` milestone | `E02-request-intake.md`, `E02-S01-id-generation.md`, `T01-S01-storage.md`, `M01-mvp.md` |
+| `55-in-progress/`, `60-verify/` | Same story ID and filename, under the agent folder in `55` | `E02-S01-id-generation.md` |
+| `70-completed/` | `<epic-id>-<epic-slug>/<story-id>-<story-slug>.md`; the epic file moves there too; technical stories use `T01-technical/` | `E02-request-intake/E02-S01-id-generation.md` |
 
-The reference's prefix is the `{{RefPrefix}}` token — `W-` by default, the JIRA project key
-when `jira-refs` is selected.
-
-The five-digit number is sequential across the whole of `spec/` — take the highest already used
-in any of the folders and add one. The file keeps its name as it moves between folders.
+Story numbers are counted within their feature epic or technical container. Allocate the next
+free `E`/`M` id and story number; technical containers hold at most 99 stories (`T01-S99` then
+`T02-S01`). An external reference, when present, follows the story ID and precedes the slug; its
+prefix is `{{RefPrefix}}` (`W-` by default, or the JIRA project key with `jira-refs`). The story
+filename does not change as it moves between folders.
 
 ## `docs/` — contents
 

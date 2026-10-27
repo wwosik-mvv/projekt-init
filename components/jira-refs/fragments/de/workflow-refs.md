@@ -1,12 +1,12 @@
 ## JIRA-Referenzen
 
-Pläne in diesem Repo entsprechen in der Regel einem JIRA-Ticket im Projekt `{{TrackerKey}}`
+Stories in diesem Repo entsprechen in der Regel einem JIRA-Ticket im Projekt `{{TrackerKey}}`
 (`{{TrackerBaseUrl}}`).
 
-**Im Dateinamen** steht der Ticket-Schlüssel zwischen laufender Nummer und Titel:
+**Im Dateinamen** steht der Ticket-Schlüssel nach der Story-ID und vor dem Slug:
 
 ```
-00010 {{TrackerKey}}-533 Reflexionsbasierte Nachrichten-Polymorphie.md
+E02-S05-{{TrackerKey}}-533-reflexionsbasierte-nachrichten-polymorphie.md
 ```
 
 **Im Plan** wird auf Anfrage ein Kapitel `## JIRA-Story` **direkt nach `## Zusammenfassung`**
@@ -24,5 +24,5 @@ Das Kapitel beginnt mit einer Platzhalterzeile:
 ```
 
 Nennt der Mensch später die angelegte Ticket-ID, geschieht alles drei in einer Änderung: den
-Platzhalter ersetzen, die ID in den H1-Titel des Plans aufnehmen und die Plandatei umbenennen,
-sodass die ID zwischen Nummer und Titel steht.
+Platzhalter ersetzen, die ID in den H1-Titel der Story aufnehmen und die Storydatei umbenennen,
+sodass die ID nach der Story-ID und vor dem Slug steht.

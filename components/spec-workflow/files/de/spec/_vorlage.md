@@ -1,11 +1,11 @@
-# NNNNN Titel
+# E01-S01 Kurztitel
 
-<!-- Dateiname: `NNNNN Titel.md`, oder `NNNNN {{RefPrefix}}nnnn Titel.md`, wenn eine externe
-     Referenz bekannt ist — die Referenz steht zwischen Nummer und Titel. Die Nummer ist über
-     das gesamte spec/ fortlaufend. -->
+<!-- Dateiname: `E01-S01-kurztitel.md` oder `T01-S01-kurztitel.md`; Storynummern zählen innerhalb
+     ihres Epics/Containers. Eine bekannte externe Referenz `{{RefPrefix}}nnnn` steht nach der ID. -->
 
-> Referenz: {{RefPrefix}}nnnn (entfernen, falls unbekannt)
 > Status: Entwurf
+> Epic: [E01 Epic-Titel](E01-kurztitel.md) — oder `T01 (technisch)`
+> Milestone: [M01 Titel](M01-kurztitel.md) (entfernen, falls keiner)
 
 ## Zusammenfassung
 

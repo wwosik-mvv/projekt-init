@@ -4,3 +4,5 @@
   w `spec/10-analizy/` i napisz tylko, że jest gotowa.
 - **Zgłaszaj zakończenie bez podsumowania.** Po realizacji zadania napisz, że jest skończone —
   szczegóły należą do rozdziału *Notatki z implementacji* w pliku planu, nie na czat.
+- **Claimuj stories przed realizacją.** Nigdy nie realizuj story objętego claimem innego agenta
+  ani nie zmieniaj jego kodu; stosuj procedurę claimowania i zwalniania z `ai/proces-pracy.md`.

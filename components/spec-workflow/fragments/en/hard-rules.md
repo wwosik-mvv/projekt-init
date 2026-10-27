@@ -4,3 +4,5 @@
   `spec/10-analysis/` and say it is done.
 - **Report completion without a summary.** After implementing a task, say it is done — the
   detail belongs in the plan file's *Implementation notes*, not in chat.
+- **Claim stories before implementation.** Never implement a story claimed by another agent or
+  change the code it owns; follow the claim and release procedure in `ai/workflow.md`.

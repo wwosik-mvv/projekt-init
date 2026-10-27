@@ -1,11 +1,11 @@
-# NNNNN Tytuł
+# E01-S01 Krótki tytuł
 
-<!-- Nazwa pliku: `NNNNN Tytuł.md`, albo `NNNNN {{RefPrefix}}nnnn Tytuł.md`, gdy znany jest
-     zewnętrzny numer — referencja stoi między numerem a tytułem. Numer jest ciągły w obrębie
-     całego spec/. -->
+<!-- Nazwa pliku: `E01-S01-krótki-tytuł.md` albo `T01-S01-krótki-tytuł.md`; numer story liczy się
+     w obrębie epica/kontenera. Znana referencja `{{RefPrefix}}nnnn` stoi po ID story. -->
 
-> Referencja: {{RefPrefix}}nnnn (usuń, jeśli nieznana)
 > Status: do zrobienia
+> Epic: [E01 Tytuł epica](E01-krótki-tytuł.md) — albo `T01 (techniczne)`
+> Milestone: [M01 Tytuł milestone](M01-krótki-tytuł.md) (usuń, jeśli brak)
 
 ## Podsumowanie
 

@@ -1,12 +1,12 @@
 ## JIRA references
 
-Plans in this repo usually correspond to a JIRA ticket in project `{{TrackerKey}}`
+Stories in this repo usually correspond to a JIRA ticket in project `{{TrackerKey}}`
 (`{{TrackerBaseUrl}}`).
 
-**In the filename**, the ticket key sits between the sequence number and the title:
+**In the filename**, the ticket key sits after the story ID and before the slug:
 
 ```
-00010 {{TrackerKey}}-533 Reflection-based message polymorphism.md
+E02-S05-{{TrackerKey}}-533-reflection-based-message-polymorphism.md
 ```
 
 **In the plan**, when asked for a JIRA story, insert a `## JIRA story` chapter **directly after
@@ -24,5 +24,5 @@ Start the chapter with a placeholder line:
 ```
 
 When the human later gives the created ticket id, do all three in one change: replace the
-placeholder, add the id to the plan's H1 title, and rename the plan file so the id sits between
-the number and the title.
+placeholder, add the id to the story's H1 title, and rename the story file so the id sits after
+the story ID and before the slug.
