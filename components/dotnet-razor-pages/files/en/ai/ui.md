@@ -10,6 +10,7 @@ of that feature and record the decision in [memory.md](memory.md).
   `Index.cshtml.cs`).
 - Shared layout and partials in `Pages/Shared/`. A partial that is only used by one page lives
   next to that page, not in `Shared/`.
+- For pagination, use `pageNumber` as the query parameter; never use `page`.
 - `PageModel` classes hold no business logic — they call into services and shape data for the
   view.
 

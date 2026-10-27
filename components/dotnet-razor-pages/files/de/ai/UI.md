@@ -11,6 +11,7 @@ Entscheidung wird in [Gedächtnis.md](Gedächtnis.md) festgehalten.
   `Index.cshtml.cs`).
 - Gemeinsames Layout und geteilte Partials in `Pages/Shared/`. Ein Partial, das nur eine einzige
   Seite verwendet, liegt neben dieser Seite, nicht in `Shared/`.
+- Für die Seitennummerierung `pageNumber` als Query-Parameter verwenden, niemals `page`.
 - `PageModel`-Klassen enthalten keine Fachlogik — sie rufen Services auf und bereiten Daten für
   die View auf.
 

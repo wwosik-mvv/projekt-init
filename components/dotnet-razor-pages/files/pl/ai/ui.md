@@ -10,6 +10,7 @@ w [pamięć.md](pamięć.md).
 - Jedna strona na URL w `Pages/`, z code-behind obok (`Index.cshtml` + `Index.cshtml.cs`).
 - Wspólny layout i współdzielone partiale w `Pages/Shared/`. Partial używany tylko przez jedną
   stronę leży obok tej strony, nie w `Shared/`.
+- Do numeru strony w paginacji używaj parametru zapytania `pageNumber`, nigdy `page`.
 - Klasy `PageModel` nie zawierają logiki biznesowej — wołają serwisy i przygotowują dane dla
   widoku.
 
